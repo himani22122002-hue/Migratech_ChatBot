@@ -2,27 +2,83 @@
   "faqs": [
     {
       "question": "What is Migratech Softwares?",
-      "answer": "Migratech Softwares is a 360 Degree Digital Product Studio founded in 2017, based in Rudrapur, Uttarakhand, India. We provide sophisticated IT, software development, web & mobile app development, and digital marketing solutions worldwide."
+      "answer": "Migratech Softwares Private Limited, founded in 2017 with the tagline 'Create || Code || Design || Decode', is a 360 Degree Digital Product Studio providing sophisticated business solutions to small and large companies worldwide with a focus on long-term relationships and client satisfaction."
     },
     {
-      "question": "What services does Migratech offer?",
-      "answer": "We offer Web Development, Mobile App Development, Custom Software (CRM/ERP), Digital Marketing (SEO, SMO, PPC), Graphic Design & Branding, Domain Registration & Hosting, Attendance & Payroll Systems, Biometric & Access Control Systems, Ecommerce Solutions, and Software Testing."
-    },
-    {
-      "question": "What products does Migratech provide?",
-      "answer": "Our key products include Interactive Flat Panels (IFPD), SmartClass educational technology platforms, and Biometric & Access Control systems."
-    },
-    {
-      "question": "How can I contact Migratech support or sales?",
-      "answer": "You can reach us via phone at +91-8859907771 or +91-8171333362, or via email at migratech03@gmail.com."
+      "question": "Where is Migratech located and how can I contact support or sales?",
+      "answer": "Migratech is based in Rudrapur, Uttarakhand, India. You can reach us via phone at +91-8859907771 or +91-8171333362, or via email at migratech03@gmail.com."
     },
     {
       "question": "What are your working hours?",
       "answer": "Our working hours are Monday through Saturday, from 10:00 AM to 06:00 PM. We are closed on Sundays."
     },
     {
+      "question": "What services does Migratech offer?",
+      "answer": "We offer Web Application Development, Mobile App Development, Application Testing, IT Consulting & Cyber Security, Website Designing, Website Hosting, Digital Marketing, ERP Development, Bulk SMS, Voice Call, and WhatsApp Marketing."
+    },
+    {
+      "question": "What products does Migratech provide?",
+      "answer": "Our key products include Interactive Flat Panels, SmartClass educational technology platforms, Attendance Machines (Biometrics), and GPS Devices."
+    },
+    {
       "question": "Which industry domains does Migratech specialize in?",
-      "answer": "We have strong expertise and solutions tailored for Educational, Healthcare, and Retail domains, among others."
+      "answer": "Migratech specializes in Educational, Healthcare, and Retail domains, offering tailored software, testing, and digital solutions."
+    },
+    {
+      "question": "Do you provide web application development?",
+      "answer": "Yes. With over 4+ years of experience, Migratech builds web applications using the latest technologies for various industries including e-commerce, tour and travels, and finance. The process involves development, server setup, framework installation, and rigorous testing before launch."
+    },
+    {
+      "question": "Do you provide mobile app development?",
+      "answer": "Yes. We offer custom mobile application development for iOS and Android platforms, specializing in innovative ideas and robust, efficient applications for startups and established businesses."
+    },
+    {
+      "question": "What is application testing and software testing?",
+      "answer": "We have expertise in functional and non-functional software testing, offering consulting for Educational, Banking, Finance, Healthcare, and Retail domains to ensure high quality and return on investment."
+    },
+    {
+      "question": "What is IT Consulting & Cyber Security?",
+      "answer": "Our IT Consulting & Cyber Security service provides IT consultancy, software development outsourcing, and offshore services. Focus areas include enterprise application development and global web presence enrichment."
+    },
+    {
+      "question": "What is website designing?",
+      "answer": "We provide professional website development focused on business objectives and conversion improvement using modern, sophisticated interfaces."
+    },
+    {
+      "question": "What is website hosting?",
+      "answer": "Our website hosting service provides server storage, technology, and domain acquisition to ensure websites are accessible via web browsers 24/7."
+    },
+    {
+      "question": "What digital marketing services do you offer?",
+      "answer": "We offer comprehensive digital marketing including paid click analysis (ROI leverage), social media campaigns, and organic SEO using ethical strategies to increase rankings and drive visitors."
+    },
+    {
+      "question": "What is ERP development?",
+      "answer": "We build custom Enterprise Resource Planning (ERP) solutions that integrate business processes into a single software system to automate recurring tasks for organizations."
+    },
+    {
+      "question": "What are Bulk SMS, Voice Call, and WhatsApp Marketing services?",
+      "answer": "Bulk SMS is a reliable and cost-efficient communication service aimed at reaching millions of prospects instantaneously with high read rates. Voice Call is a voice communication service to accelerate business reach across India. WhatsApp Marketing utilizes popular messaging apps for business advertising, group engagement, and media sharing."
+    },
+    {
+      "question": "What is an Interactive Flat Panel?",
+      "answer": "An advanced teaching and collaboration tool for modern classrooms and meeting rooms featuring 4K resolution, a high-resolution touchscreen, front audio speakers, industrial-grade aluminum frame, multiple signal inputs, and anti-scratch glass."
+    },
+    {
+      "question": "What is SmartClass?",
+      "answer": "An education technology platform for K-12 and higher education offering an All-In-One experience including student information systems, learning management, classroom collaboration, assessment, and real-time communication."
+    },
+    {
+      "question": "What are Attendance Machines (Biometrics)?",
+      "answer": "Devices that use biological traits (fingerprints, palm prints, iris, or facial patterns) to authenticate identity and mark attendance, eliminating physical records and streamlining payroll."
+    },
+    {
+      "question": "Do you provide GPS devices?",
+      "answer": "Yes. We provide navigation tools for vehicles and handheld use that provide lane guidance, shortest route calculations, traffic and weather alerts, voice commands, and landmark navigation."
+    },
+    {
+      "question": "How can I request a quotation or human assistance for custom requirements?",
+      "answer": "For custom requirements, quotations, or human assistance, you can reach out to our team directly via phone at +91-8859907771 or +91-8171333362, or via email at migratech03@gmail.com."
     }
   ]
 }

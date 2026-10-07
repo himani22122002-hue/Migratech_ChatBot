@@ -1,6 +1,6 @@
 /**
- * Migratech Chatbot Frontend Logic (Step 3)
- * Modular design ready for backend API integration in Step 4.
+ * Migratech Chatbot Frontend Logic
+ * Connects frontend to api/chat.php
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,10 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearChatBtn = document.getElementById('clear-chat');
     const promptChips = document.querySelectorAll('.prompt-chip');
 
-    // Event Listeners
     chatForm.addEventListener('submit', handleFormSubmit);
     clearChatBtn.addEventListener('click', clearChatHistory);
-    
+
     promptChips.forEach(chip => {
         chip.addEventListener('click', () => {
             const query = chip.getAttribute('data-query');
@@ -25,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleFormSubmit(e) {
         e.preventDefault();
+
         const text = userInput.value.trim();
         if (!text) return;
 
@@ -32,29 +32,49 @@ document.addEventListener('DOMContentLoaded', () => {
         userInput.value = '';
     }
 
-    function submitUserMessage(text) {
-        // Append user message to UI
+    async function submitUserMessage(text) {
         appendMessage(text, 'user');
 
-        // Show typing indicator or pending state
         const loadingId = showTypingIndicator();
 
-        // Call the chat service module (modularly prepared for fetch("api/chat.php"))
-        ChatService.sendMessage(text)
-            .then(response => {
-                removeTypingIndicator(loadingId);
-                appendMessage(response, 'bot');
-            })
-            .catch(error => {
-                removeTypingIndicator(loadingId);
-                appendMessage('Sorry, something went wrong. Please try again.', 'bot');
-                console.error('Chat error:', error);
-            });
+        try {
+            const response = await ChatService.sendMessage(text);
+
+            removeTypingIndicator(loadingId);
+
+            if (!response.success) {
+                appendMessage(
+                    response.reply || 'Sorry, something went wrong. Please try again.',
+                    'bot'
+                );
+                return;
+            }
+
+            appendMessage(response.reply, 'bot');
+
+            if (response.needs_human === true) {
+                showCallNowButton();
+            }
+
+        } catch (error) {
+            removeTypingIndicator(loadingId);
+
+            appendMessage(
+                'Sorry, something went wrong. Please try again.',
+                'bot'
+            );
+
+            console.error('Chat error:', error);
+        }
     }
 
     function appendMessage(text, sender) {
         const messageDiv = document.createElement('div');
-        messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
+
+        messageDiv.classList.add(
+            'message',
+            sender === 'user' ? 'user-message' : 'bot-message'
+        );
 
         const avatarDiv = document.createElement('div');
         avatarDiv.classList.add('message-avatar');
@@ -77,11 +97,35 @@ document.addEventListener('DOMContentLoaded', () => {
         messageDiv.appendChild(contentDiv);
 
         chatMessages.appendChild(messageDiv);
+
+        scrollToBottom();
+    }
+
+    function showCallNowButton() {
+        // Avoid showing duplicate buttons
+        if (document.getElementById('call-now-button')) {
+            return;
+        }
+
+        const callContainer = document.createElement('div');
+        callContainer.classList.add('call-now-container');
+        callContainer.id = 'call-now-button';
+
+        const callButton = document.createElement('a');
+
+        callButton.href = 'tel:+918859907771';
+        callButton.classList.add('call-now-button');
+        callButton.textContent = '📞 Call Now';
+
+        callContainer.appendChild(callButton);
+        chatMessages.appendChild(callContainer);
+
         scrollToBottom();
     }
 
     function showTypingIndicator() {
         const id = 'typing-' + Date.now();
+
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message', 'bot-message');
         messageDiv.id = id;
@@ -92,18 +136,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const contentDiv = document.createElement('div');
         contentDiv.classList.add('message-content');
-        contentDiv.innerHTML = '<p><em>Migratech Assistant is typing...</em></p>';
+
+        contentDiv.innerHTML =
+            '<p><em>Migratech Assistant is typing...</em></p>';
 
         messageDiv.appendChild(avatarDiv);
         messageDiv.appendChild(contentDiv);
 
         chatMessages.appendChild(messageDiv);
+
         scrollToBottom();
+
         return id;
     }
 
     function removeTypingIndicator(id) {
         const element = document.getElementById(id);
+
         if (element) {
             element.remove();
         }
@@ -119,6 +168,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+
+        const callButton = document.getElementById('call-now-button');
+
+        if (callButton) {
+            callButton.remove();
+        }
     }
 
     function scrollToBottom() {
@@ -126,33 +181,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function formatTime(date) {
-        return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        return date.toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit'
+        });
     }
 });
 
+
 /**
- * ChatService Module
- * Encapsulates communication logic. 
- * Designed so that in Step 4, the placeholder can be replaced with fetch("api/chat.php").
+ * ChatService
+ * Communicates with the PHP backend.
  */
 const ChatService = {
-    async sendMessage(message) {
-        // Simulate network delay for realistic feel
-        await new Promise(resolve => setTimeout(resolve, 600));
 
-        // Placeholder response logic (Ready to be replaced by fetch("api/chat.php") in Step 4)
-        const lowerMsg = message.toLowerCase();
-        
-        if (lowerMsg.includes('service')) {
-            return "Migratech offers Web Development, Mobile App Development, Custom Software (CRM/ERP), Digital Marketing (SEO, SMO, PPC), Graphic Design & Branding, Biometric Systems, and Software Testing.";
-        } else if (lowerMsg.includes('product')) {
-            return "Our primary products include Interactive Flat Panels (IFPD), SmartClass education technology platforms, and Biometric & Access Control systems.";
-        } else if (lowerMsg.includes('contact') || lowerMsg.includes('phone') || lowerMsg.includes('email')) {
-            return "You can reach Migratech at +91-8859907771 or +91-8171333362, or email us at migratech03@gmail.com.";
-        } else if (lowerMsg.includes('hour') || lowerMsg.includes('time')) {
-            return "Our working hours are Monday through Saturday, 10:00 AM – 06:00 PM. We are closed on Sundays.";
-        } else {
-            return `Thank you for your message: "${message}". Migratech Softwares provides 360-degree digital and software solutions. Feel free to ask about our services, products, working hours, or contact details!`;
+    async sendMessage(message) {
+
+        const response = await fetch('api/chat.php', {
+            method: 'POST',
+
+            headers: {
+                'Content-Type': 'application/json'
+            },
+
+            body: JSON.stringify({
+                message: message
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
         }
+
+        return await response.json();
     }
 };
