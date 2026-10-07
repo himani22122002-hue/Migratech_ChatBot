@@ -1,0 +1,27 @@
+{
+  "name": "Migratech Softwares Private Limited",
+  "founded": 2017,
+  "tagline": "Create || Code || Design || Decode",
+  "description": "A 360 Degree Digital Product Studio providing sophisticated business solutions to small and large companies worldwide with a focus on long-term relationships and client satisfaction.",
+  "location": {
+    "city": "Rudrapur",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "contact": {
+    "phones": [
+      "+91-8859907771",
+      "+91-8171333362"
+    ],
+    "email": "migratech03@gmail.com"
+  },
+  "working_hours": {
+    "monday_to_saturday": "10:00 AM – 06:00 PM",
+    "sunday": "Closed"
+  },
+  "domains": [
+    "Educational",
+    "Healthcare",
+    "Retail"
+  ]
+}

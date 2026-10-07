@@ -1,0 +1,39 @@
+{
+  "services": [
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "description": "Web Application Development (Java, PHP, MySQL, ASP.net, C#), Website Designing, and Maintenance."
+    },
+    {
+      "id": "mobile-app-development",
+      "name": "Mobile App Development",
+      "description": "Custom applications for iOS and Android platforms using the latest technologies."
+    },
+    {
+      "id": "software-development",
+      "name": "Software Development",
+      "description": "Customized Software, CRM, and ERP Development/Implementation."
+    },
+    {
+      "id": "digital-marketing",
+      "name": "Digital Marketing",
+      "description": "SEO (Search Engine Optimization), SMO (Social Media Optimization), PPC (Pay Per Click), Content Marketing, and Online Reputation Management."
+    },
+    {
+      "id": "infrastructure-branding",
+      "name": "Infrastructure & Branding",
+      "description": "Domain Registration and Hosting, Graphic Design (Web and Print), Branding, and Logo Development."
+    },
+    {
+      "id": "specialized-systems",
+      "name": "Specialized Systems",
+      "description": "Attendance & Payroll Management, Biometric & Access Control Systems, and Ecommerce Solutions."
+    },
+    {
+      "id": "testing",
+      "name": "Software Testing",
+      "description": "Application testing for Educational, Healthcare, and Retail domains."
+    }
+  ]
+}

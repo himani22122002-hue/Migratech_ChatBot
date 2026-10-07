@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": "interactive-flat-panel",
+      "name": "Interactive Flat Panel (IFPD)",
+      "description": "Large-format touchscreen displays for meeting rooms and modern classrooms."
+    },
+    {
+      "id": "smart-class",
+      "name": "SmartClass",
+      "description": "An education technology platform designed for K-12 and higher education institutions."
+    },
+    {
+      "id": "biometrics",
+      "name": "Biometrics & Access Control",
+      "description": "Authentication and access control systems using biological traits for identity verification."
+    }
+  ]
+}
