@@ -2,18 +2,23 @@
   "products": [
     {
       "id": "interactive-flat-panel",
-      "name": "Interactive Flat Panel (IFPD)",
-      "description": "Large-format touchscreen displays for meeting rooms and modern classrooms."
+      "name": "Interactive Flat Panel",
+      "description": "An advanced teaching and collaboration tool for modern classrooms and meeting rooms featuring 4K resolution, a high-resolution touchscreen, front audio speakers, industrial-grade aluminum frame, multiple signal inputs, and anti-scratch glass."
     },
     {
-      "id": "smart-class",
+      "id": "smartclass",
       "name": "SmartClass",
-      "description": "An education technology platform designed for K-12 and higher education institutions."
+      "description": "An education technology platform for K-12 and higher education offering an All-In-One experience including student information systems, learning management, classroom collaboration, assessment, and real-time communication."
     },
     {
-      "id": "biometrics",
-      "name": "Biometrics & Access Control",
-      "description": "Authentication and access control systems using biological traits for identity verification."
+      "id": "attendance-machine-biometrics",
+      "name": "Attendance Machine (Biometrics)",
+      "description": "Devices that use biological traits (fingerprints, palm prints, iris, or facial patterns) to authenticate identity and mark attendance, eliminating physical records and streamlining payroll."
+    },
+    {
+      "id": "gps-devices",
+      "name": "GPS Devices",
+      "description": "Navigation tools for vehicles and handheld use that provide lane guidance, shortest route calculations, traffic and weather alerts, voice commands, and landmark navigation."
     }
   ]
 }

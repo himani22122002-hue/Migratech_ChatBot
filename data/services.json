@@ -1,39 +1,59 @@
 {
   "services": [
     {
-      "id": "web-development",
-      "name": "Web Development",
-      "description": "Web Application Development (Java, PHP, MySQL, ASP.net, C#), Website Designing, and Maintenance."
+      "id": "web-application-development",
+      "name": "Web Application Development",
+      "description": "With over 4+ years of experience, Migratech builds web applications using the latest technologies for various industries including e-commerce, tour and travels, and finance. The process involves development, server setup, framework installation, and rigorous testing before launch."
     },
     {
       "id": "mobile-app-development",
       "name": "Mobile App Development",
-      "description": "Custom applications for iOS and Android platforms using the latest technologies."
+      "description": "Custom mobile application development for iOS and Android platforms. Specializing in innovative ideas and robust, efficient applications for startups and established businesses."
     },
     {
-      "id": "software-development",
-      "name": "Software Development",
-      "description": "Customized Software, CRM, and ERP Development/Implementation."
+      "id": "application-testing",
+      "name": "Application Testing",
+      "description": "Expertise in functional and non-functional software testing, offering consulting for Educational, Banking, Finance, Healthcare, and Retail domains to ensure high quality and return on investment."
+    },
+    {
+      "id": "it-consulting-cyber-security",
+      "name": "IT Consulting & Cyber Security",
+      "description": "Provides IT consultancy, software development outsourcing, and offshore services. Focus areas include enterprise application development and global web presence enrichment."
+    },
+    {
+      "id": "website-designing",
+      "name": "Website Designing",
+      "description": "Professional website development focused on business objectives and conversion improvement using modern, sophisticated interfaces."
+    },
+    {
+      "id": "website-hosting",
+      "name": "Website Hosting",
+      "description": "Provides server storage, technology, and domain acquisition to ensure websites are accessible via web browsers 24/7."
     },
     {
       "id": "digital-marketing",
       "name": "Digital Marketing",
-      "description": "SEO (Search Engine Optimization), SMO (Social Media Optimization), PPC (Pay Per Click), Content Marketing, and Online Reputation Management."
+      "description": "Comprehensive digital marketing including paid click analysis (ROI leverage), social media campaigns, and organic SEO using ethical strategies to increase rankings and drive visitors."
     },
     {
-      "id": "infrastructure-branding",
-      "name": "Infrastructure & Branding",
-      "description": "Domain Registration and Hosting, Graphic Design (Web and Print), Branding, and Logo Development."
+      "id": "erp-development",
+      "name": "ERP Development",
+      "description": "Custom Enterprise Resource Planning (ERP) solutions that integrate business processes into a single software system to automate recurring tasks for organizations."
     },
     {
-      "id": "specialized-systems",
-      "name": "Specialized Systems",
-      "description": "Attendance & Payroll Management, Biometric & Access Control Systems, and Ecommerce Solutions."
+      "id": "bulk-sms",
+      "name": "Bulk SMS",
+      "description": "A reliable and cost-efficient communication service aimed at reaching millions of prospects instantaneously leveraging high read rates."
     },
     {
-      "id": "testing",
-      "name": "Software Testing",
-      "description": "Application testing for Educational, Healthcare, and Retail domains."
+      "id": "voice-call",
+      "name": "Voice Call",
+      "description": "Voice communication service to accelerate business reach and communicate with customers reliably and swiftly across India."
+    },
+    {
+      "id": "whatsapp-marketing",
+      "name": "WhatsApp Marketing",
+      "description": "Utilizes popular messaging apps for business advertising, group engagement, and media sharing to maximize reach with minimum effort."
     }
   ]
 }
