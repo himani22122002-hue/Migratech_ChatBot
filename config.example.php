@@ -1,0 +1,4 @@
+<?php
+define('GEMINI_API_KEY', 'YOUR_GEMINI_API_KEY');
+define('GEMINI_MODEL', 'YOUR_GEMINI_MODEL');
+define('GEMINI_TIMEOUT', 30);
